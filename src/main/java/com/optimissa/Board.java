@@ -111,29 +111,16 @@ public class Board {
     }
 
     private Boolean checkDiagonal(Integer row, Integer column, Player player) {
-        //ArrayList<Integer> auxList1 = new ArrayList<>();
         ArrayList<Integer> auxList = new ArrayList<>();
         Boolean win = Boolean.FALSE;
         if (row > 2) {
             return win;
         }
 
-        //Calculate back from point OK
-        //for (int t = row-1, u = column-1; t >= 0 && u >= 0; t--, u--) {
-        //    auxList1.add(board[t][u]);
-        //}
-        //for(Integer i : auxList1)
-        //   System.out.print(i + " ");
-
         //Calculate front from point OK
         for (int t = row, u = column; t < 6 && u < 7; t++, u++) {
             auxList.add(board[t][u]);
         }
-
-        //OK
-        //for (int c = 0; c < auxList1.size() - 1 ; c++) {
-        //    auxList2.set(0, auxList1.get(c));
-        //}
 
         for (int n = 0; n < auxList.size() - 1 ; n++) {
             Integer total = 0;
@@ -154,26 +141,16 @@ public class Board {
     }
     
      private Boolean checkSecondaryDiagonal(Integer row, Integer column, Player player) {
-        //ArrayList<Integer> auxList1 = new ArrayList<>();
         ArrayList<Integer> auxList = new ArrayList<>();
         Boolean win = Boolean.FALSE;
         if (row > 2) {
             return win;
         }
 
-        //Calculate back from point
-        //for (int t = row, u = column; t >=0 && u<=5; t--, u++) {
-        //    auxList1.add(board[t][u]);
-        //}
-
         //Calculate front from point
         for (int t = row, u = column; t < 6 && u > -1; t++, u--) {
             auxList.add(board[t][u]);
         }
-
-        //for (int c = 0; c < auxList1.size() - 1; c++) {
-        //    auxList2.set(0, auxList1.get(c));
-        //}
 
         for (int n = 0; n < auxList.size() - 1 ; n++) {
             Integer total = 0;
