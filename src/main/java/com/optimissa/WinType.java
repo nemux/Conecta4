@@ -2,7 +2,7 @@ package com.optimissa;
 
 /**
  *
- * @author NeMuX <garaujo@kea.mx>
+ * @author NeMuX <nemux.1@gmail.com>
  */
 public enum WinType {
     HORIZONTAL(1),

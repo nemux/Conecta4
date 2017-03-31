@@ -3,11 +3,11 @@ package com.optimissa;
 import java.util.Scanner;
 
 /**
- * Copyright 2016 (C) KEA
+ * Copyright 2016 (C) NeMuX
  *
  * Game on 31-mar-2017
  *
- * @author NeMuX <garaujo@kea.mx>
+ * @author NeMuX <nemux.1@gmail.com>
  */
 public class Game {
 
